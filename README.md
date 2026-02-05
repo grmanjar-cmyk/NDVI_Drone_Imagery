@@ -31,3 +31,8 @@ Imagery © DroneMapper; used for educational and demonstration purposes.
 1. Open Anaconda Navigator and launch Jupyter Notebook.  
 2. Navigate to the project folder and open `ndvi_avocado_analysis.ipynb`.  
 3. Run the cells from top to bottom.
+
+## Notes
+
+This notebook was drafted with coding assistance from Perplexity.ai and
+then reviewed and edited by the author.
