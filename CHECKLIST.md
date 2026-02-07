@@ -24,3 +24,11 @@ Implement the regression model from the study:
 - **Formula**: NDVI = β₀ + β₁(Flow) + β₂(Cl⁻) + β₃(week) + β₄(Et_o) + β₅(E_c)
 - **Data Merging**: Combine weekly NDVI averages with independent variables (Flow, Chloride, Week, Et_o, and E_c).
 - **Hypothesis Testing**: Use a T-test to determine if the difference between the two water sources is statistically significant.
+
+## 🧩 5. Code Optimization (Modularization)
+- **Goal**: Convert the linear script into reusable functions to handle multiple weeks and fields efficiently without copying/pasting code. 
+- **Key Functions to Create**:
+    - `load_and_clip(image_path, mask_path)`: Automates reading and masking for every weekly flight. 
+    - `get_ndvi(image_array)`: Standardizes the math and error handling (dividing by zero) in one place. 
+    - `calculate_field_stats(ndvi_image, field_name)`: Returns summary stats (Mean NDVI) for your regression table. 
+- **Workflow**: Use a Python `for` loop to iterate through your folder of drone files, applying these functions to generate the final dataset automatically. 
